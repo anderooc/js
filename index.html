@@ -24,30 +24,20 @@
         <input id="fname" type="text" id="fname" name="fname"><br />
         <label for="lname">Last name:</label><br />
         <input id="lname" type="text" id="lname" name="lname">
-        <br /><button onClick ="myClick">Submit</button>
       </p>
+      <button onClick ="nameSubmit()">Submit</button>
     </div>
-    <h1>Select your grade level:</h1>
-    <p>
-      <input type="radio" id="9" name="grade" value="9th">
-      <label for="9">9th</label><br />
-      <input type="radio" id="10" name="grade" value="10th">
-      <label for="10">10th</label><br />
-      <input type="radio" id="11" name="grade" value="11th">
-      <label for="11">11th</label><br />
-      <input type="radio" id="12" name="grade" value="12th">
-      <label for="12">12th</label><br />
-      <input type="submit" value="Submit">
-    <h1>Select how you get to school:</h1>
-    </p>
-    <p>
-      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-      <label for="vehicle1"> Bike</label><br />
-      <input type="checkbox" id="vehicle2" name="vehicle2" value="Bus">
-      <label for="vehicle2"> Bus</label><br />
-      <input type="checkbox" id="vehicle3" name="vehicle3" value="Car">
-      <label for="vehicle3"> Car</label><br />
-      <input type="submit" value="Submit">
-    </p>
-  </body>
+    <div id="transportation">
+      <h1>Select how you get to school:</h1>
+      <p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Bike</label><br />
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Bus">
+        <label for="vehicle2"> Bus</label><br />
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Car">
+        <label for="vehicle3"> Car</label><br />
+      </p>
+      <button onClick ="checkboxSubmit()">Submit</button>
+    </body>
+  </div>
 </html>
