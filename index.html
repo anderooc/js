@@ -30,14 +30,28 @@
     <div id="transportation">
       <h1>Select how you get to school:</h1>
       <p>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <input type="checkbox" id="vehicle" name="vehicle" value="Bike">
         <label for="vehicle1"> Bike</label><br />
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Bus">
+        <input type="checkbox" id="vehicle" name="vehicle" value="Bus">
         <label for="vehicle2"> Bus</label><br />
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Car">
+        <input type="checkbox" id="vehicle" name="vehicle" value="Car">
         <label for="vehicle3"> Car</label><br />
       </p>
       <button onClick ="checkboxSubmit()">Submit</button>
-    </body>
-  </div>
+    </div>
+    <div id="gradeQuestion">
+      <h1>Select your grade level:</h1>
+      <p>
+        <input type="radio" id="9th" name="grade" value="9th">
+        <label for="9th">9th</label><br />
+        <input type="radio" id="10th" name="grade" value="10th">
+        <label for="10th">10th</label><br />
+        <input type="radio" id="11th" name="grade" value="11th">
+        <label for="11th">11th</label><br />
+        <input type="radio" id="12th" name="grade" value="12th">
+        <label for="12th">12th</label><br />
+      </p>
+      <button onClick ="gradeSubmit()">Submit</button>
+    </div>
+  </body>
 </html>
