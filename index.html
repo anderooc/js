@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>First Javascript</title>
+    <title>Survey</title>
     <meta charset="utf-8"></meta>
     <script defer src="script.js"></script>
     <style>
@@ -16,31 +16,18 @@
 
     </style>
   </head>
+
   <body>
-    <div id="nameQuestion">
-      <h1>Please enter your name:</h1>
+    <h1>Simple Survey</h1>
+    <div id="survey">
+      <h2>Please enter your name:</h2> <!--Name submission-->
       <p>
         <label for="fname">First name:</label><br />
         <input id="fname" type="text" id="fname" name="fname"><br />
         <label for="lname">Last name:</label><br />
         <input id="lname" type="text" id="lname" name="lname">
       </p>
-      <button onClick ="nameSubmit()">Submit</button>
-    </div>
-    <div id="transportation">
-      <h1>Select how you get to school:</h1>
-      <p>
-        <input type="checkbox" id="vehicle" name="vehicle" value="Bike">
-        <label for="vehicle1"> Bike</label><br />
-        <input type="checkbox" id="vehicle" name="vehicle" value="Bus">
-        <label for="vehicle2"> Bus</label><br />
-        <input type="checkbox" id="vehicle" name="vehicle" value="Car">
-        <label for="vehicle3"> Car</label><br />
-      </p>
-      <button onClick ="transportationSubmit()">Submit</button>
-    </div>
-    <div id="gradeQuestion">
-      <h1>Select your grade level:</h1>
+      <h2>Select your grade level:</h2> <!--Grade question-->
       <p>
         <input type="radio" id="9th" name="grade" value="9th">
         <label for="9th">9th</label><br />
@@ -51,7 +38,18 @@
         <input type="radio" id="12th" name="grade" value="12th">
         <label for="12th">12th</label><br />
       </p>
-      <button onClick ="gradeSubmit()">Submit</button>
+      <h2>Select how you get to school:</h2><!--Vehicle question-->
+      <p>
+        <input type="checkbox" id="vehicle" name="vehicle" value="Bike">
+        <label for="vehicle1"> Bike</label><br />
+        <input type="checkbox" id="vehicle" name="vehicle" value="Bus">
+        <label for="vehicle2"> Bus</label><br />
+        <input type="checkbox" id="vehicle" name="vehicle" value="Car">
+        <label for="vehicle3"> Car</label><br />
+      </p>
+      <button onClick ="submitSurvey()">Submit</button>
+    </div>
+    <div id="pieChart">
     </div>
   </body>
 </html>
