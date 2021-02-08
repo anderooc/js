@@ -19,15 +19,23 @@
 
   <body>
     <h1>Simple Survey</h1>
-    <div id="survey">
+
+    <div id="nameQuestionText">
       <h2>Please enter your name:</h2> <!--Name submission-->
+    </div>
+    
+    <div id="nameQuestion">
       <p>
         <label for="fname">First name:</label><br />
         <input id="fname" type="text" id="fname" name="fname"><br />
         <label for="lname">Last name:</label><br />
         <input id="lname" type="text" id="lname" name="lname">
       </p>
-      <h2>Select your grade level:</h2> <!--Grade question-->
+      <button onClick ="nameSubmit()">Submit</button>
+    </div>
+
+    <h2>Select your grade level:</h2> <!--Grade question-->
+    <div id="gradeQuestion">
       <p>
         <input type="radio" id="9th" name="grade" value="9th">
         <label for="9th">9th</label><br />
@@ -38,7 +46,11 @@
         <input type="radio" id="12th" name="grade" value="12th">
         <label for="12th">12th</label><br />
       </p>
-      <h2>Select how you get to school:</h2><!--Vehicle question-->
+      <button onClick ="gradeSubmit()">Submit</button>
+    </div>
+
+    <h2>Select how you get to school:</h2><!--Vehicle question-->
+    <div id="transportationQuestion">
       <p>
         <input type="checkbox" id="vehicle" name="vehicle" value="Bike">
         <label for="vehicle1"> Bike</label><br />
@@ -47,8 +59,9 @@
         <input type="checkbox" id="vehicle" name="vehicle" value="Car">
         <label for="vehicle3"> Car</label><br />
       </p>
-      <button onClick ="submitSurvey()">Submit</button>
+      <button onClick ="checkboxSubmit()">Submit</button>
     </div>
+
     <div id="pieChart">
     </div>
   </body>
