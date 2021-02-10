@@ -20,11 +20,11 @@
   <body>
     <h1>Simple Survey</h1>
 
-    <div id="nameQuestionText">
+    <div id="nameQText">
       <h2>Please enter your name:</h2> <!--Name submission-->
     </div>
-    
-    <div id="nameQuestion">
+
+    <div id="nameQ">
       <p>
         <label for="fname">First name:</label><br />
         <input id="fname" type="text" id="fname" name="fname"><br />
@@ -33,35 +33,44 @@
       </p>
       <button onClick ="nameSubmit()">Submit</button>
     </div>
-
-    <h2>Select your grade level:</h2> <!--Grade question-->
-    <div id="gradeQuestion">
+    <div id="gradeQText">
+      <h2>Select your grade level:</h2> <!--Grade question-->
+    </div>
+    <div id="gradeQ">
       <p>
-        <input type="radio" id="9th" name="grade" value="9th">
-        <label for="9th">9th</label><br />
-        <input type="radio" id="10th" name="grade" value="10th">
-        <label for="10th">10th</label><br />
-        <input type="radio" id="11th" name="grade" value="11th">
-        <label for="11th">11th</label><br />
-        <input type="radio" id="12th" name="grade" value="12th">
-        <label for="12th">12th</label><br />
+          <input type="radio" id="9th" name="grade" value="9th">
+          <label for="9th">9th</label><br />
+          <input type="radio" id="10th" name="grade" value="10th">
+          <label for="10th">10th</label><br />
+          <input type="radio" id="11th" name="grade" value="11th">
+          <label for="11th">11th</label><br />
+          <input type="radio" id="12th" name="grade" value="12th">
+          <label for="12th">12th</label><br />
       </p>
       <button onClick ="gradeSubmit()">Submit</button>
     </div>
 
-    <h2>Select how you get to school:</h2><!--Vehicle question-->
-    <div id="transportationQuestion">
-      <p>
-        <input type="checkbox" id="vehicle" name="vehicle" value="Bike">
-        <label for="vehicle1"> Bike</label><br />
-        <input type="checkbox" id="vehicle" name="vehicle" value="Bus">
-        <label for="vehicle2"> Bus</label><br />
-        <input type="checkbox" id="vehicle" name="vehicle" value="Car">
-        <label for="vehicle3"> Car</label><br />
-      </p>
-      <button onClick ="checkboxSubmit()">Submit</button>
+    <div id="transportQText">
+      <h2>Select how you get to school:</h2><!--Vehicle question-->
     </div>
 
+    <table id="transportQ">
+      <tr>
+        <td><input type="checkbox" id="vehicle1" name="vehicle" value="Bike">
+        <label for="vehicle1"> Bike</label><br /></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" id="vehicle2" name="vehicle" value="Bus">
+        <label for="vehicle2"> Bus</label><br /></td>
+      </tr>
+      <tr>
+        <td>
+        <input type="checkbox" id="vehicle3" name="vehicle" value="Car">
+        <label for="vehicle3"> Car</label><br /><td>
+      </tr>
+    </table><br />
+    
+    <button onClick ="checkboxSubmit()">Submit</button>
     <div id="pieChart">
     </div>
   </body>
